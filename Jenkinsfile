@@ -1,7 +1,7 @@
 pipeline{
     agent{
         label{
-            label '172.31.32.122'
+            label '172.31.32.113'
         }
     }
     stages{
@@ -9,7 +9,6 @@ pipeline{
             steps{
                 sh "sudo yum install java-1.8.0-openjdk-devel-debug.x86_64 -y"
                 sh "sudo yum install git -y"
-                //sh "sudo rm -rf multi-11"
                 sh "sudo git clone https://github.com/Kushal-1412/multi-11.git -b 22Q2"
             }
         }
