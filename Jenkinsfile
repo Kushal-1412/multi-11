@@ -2,7 +2,6 @@ pipeline{
     agent{
         label{
             label '172.31.32.122'
-            customWorkspace "/data/pipeline"
         }
     }
     stages{
