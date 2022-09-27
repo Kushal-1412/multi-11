@@ -9,7 +9,7 @@ pipeline{
             steps{
                 sh "sudo yum install java-1.8.0-openjdk-devel-debug.x86_64 -y"
                 sh "sudo yum install git -y"
-                //sh "sudo git clone https://github.com/Kushal-1412/multi-11.git -b 22Q2"
+                sh "sudo git clone https://github.com/Kushal-1412/multi-11.git -b 22Q2"
             }
         }
         stage('install-httpd'){
