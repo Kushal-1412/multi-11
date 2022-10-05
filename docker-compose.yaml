@@ -3,7 +3,7 @@ services:
     httpd-server:
         image: 'httpd'
         ports:
-        -  "80-90:80"
+        -  "81-82:80"
         
         volumes:
         -  "/home/ec2-user/workspace/Project3-Sept30:/usr/local/apache2/htdocs"
